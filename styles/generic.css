@@ -172,36 +172,6 @@
   display: flex;
 }
 
-@media screen and (max-width: 800px) {
-  .contacts {
-    display: block;
-    margin-top: -3vw;
-  }
-  .contacts_form {
-    width: 100%;
-    text-align: center;
-  }
-  .contacts_form_flex{
-    display: flex;
-    justify-content: center;
-  }
-  .contacts_info{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .contacts_info_addres:last-child {
-    margin-bottom: -2vw;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .buttons {
-  display: flex;
-  justify-content: center;
-  }
-}
-                      /* social */
 .social {
   background: #242943;
   color: #374766;
@@ -217,4 +187,24 @@
 .social_copyright p {
   font-size: 1vw;
   margin: 2vw 0 0 6vw;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+  .contacts {
+    display: none;
+  }
+
+  .header_text p {
+    font-size: 70%;
+  }
+
+  .contacts_info {
+    display: none;
+  }
+
+  .social_links {
+    margin-top: -8%;
+  }
 }

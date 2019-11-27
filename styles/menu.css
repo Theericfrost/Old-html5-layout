@@ -24,14 +24,21 @@
   font-size: 1.5vw;
   line-height: 3vw;
 }
+
 .menu_text a:hover {
   cursor: pointer;
   color: rgb(71, 71, 71) ;
   border-color: rgb(71, 71, 71) ;
 }
+
 .menu_text a:last-child{
   border: none;
 }
+
+button {
+  cursor: pointer;
+}
+
 button:first-child {
   background: #ffffff;
   border: none;
@@ -49,9 +56,35 @@ button:last-child {
   font-size: 1.5vw;
   margin-top: 1vw;
 }
+
 button:hover {
   box-shadow: 0 0 40px rgb(0, 0, 0) inset;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+
+  .menu_text {
+    width: 100%;
+    padding-top: 40%;
+  }
+
+  .menu_text a {
+    font-size: 300%;
+    line-height: 200%;
+  }
+
+  .menu_buttons button {
+    font-size: 150%;
+  }
+
+  .menu_buttons button:nth-child(1) , .menu_buttons button:nth-child(3){
+    margin-top: 4%;
+    width: 60%;
+    height: 10%;
+  }
 }
